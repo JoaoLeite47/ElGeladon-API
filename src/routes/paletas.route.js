@@ -5,7 +5,7 @@ import {
   findByIdPaletaController,
   createPaletaController,
   updatePaletaController,
-  deletePaletaController
+  deletePaletaController,
 } from '../controllers/paletas.controller.js'; // importa o controller
 
 export const route = express.Router(); // instancia o router do express
