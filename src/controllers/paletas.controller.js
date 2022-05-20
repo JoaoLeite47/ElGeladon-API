@@ -80,7 +80,8 @@ export const updatePaletaController = (req, res) => {
 
 export const deletePaletaController = (req, res) => {
   // rota para deletar uma paleta (DELETE)
-  const id_Paleta = req.param.id; // pega o id da paleta
+  const id_Paleta = req.params.id;
+  // pega o id da paleta
   deletePaletaService(id_Paleta); // chama o serviço para deletar uma paleta
   res.send({ message: 'Paleta deletada com sucesso' }); // retorna uma mensagem de sucesso
 };
